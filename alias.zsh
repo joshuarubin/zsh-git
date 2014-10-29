@@ -62,7 +62,8 @@ alias gCt='git checkout --theirs --'
 alias gCT='gCt $(gCl)'
 
 # Data (d)
-alias gd='git ls-files'
+#alias gd='git ls-files'
+alias gd='git diff --ignore-submodules=${_git_status_ignore_submodules}'
 alias gdc='git ls-files --cached'
 alias gdx='git ls-files --deleted'
 alias gdm='git ls-files --modified'
@@ -139,7 +140,8 @@ alias gRs='git remote show'
 alias gRb='git-hub-browse'
 
 # Stash (s)
-alias gs='git stash'
+alias gs='git status --short --branch --ignore-submodules=${_git_status_ignore_submodules}'
+alias gst='git stash'
 alias gsa='git stash apply'
 alias gsx='git stash drop'
 alias gsX='git-stash-clear-interactive'
