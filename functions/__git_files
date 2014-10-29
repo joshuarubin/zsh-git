@@ -1,0 +1,2 @@
+# Makes git auto completion faster favouring for local completions
+_wanted files expl 'local files' _files
