@@ -22,6 +22,14 @@ _git_log_brief_format='%C(green)%h%C(reset) %s%n%C(blue)(%ar by %an)%C(red)%d%C(
 # Aliases
 #
 
+if (( $+commands[gitjk_cmd] )); then
+  alias gitjk="history -n | tail -n 10 | (tac || tail -r) | gitjk_cmd"
+fi
+
+if (( $+commands[gh] )); then
+  eval "$(gh alias -s)"
+fi
+
 # Git
 alias g='git'
 
