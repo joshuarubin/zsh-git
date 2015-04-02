@@ -16,7 +16,7 @@ _git_log_oneline_format='%C(green)%h%C(reset) %s%C(red)%d%C(reset)%n'
 _git_log_brief_format='%C(green)%h%C(reset) %s%n%C(blue)(%ar by %an)%C(red)%d%C(reset)%n'
 
 # Status
-#_git_status_ignore_submodules='none'
+_git_status_ignore_submodules='none'
 
 #
 # Aliases
