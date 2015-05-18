@@ -34,7 +34,7 @@ fi
 alias g='git'
 
 # Branch (b)
-alias gb='git branch'
+#alias gb='git branch'
 alias gbc='git checkout -b'
 alias gbl='git branch -v'
 alias gbL='git branch -av'
