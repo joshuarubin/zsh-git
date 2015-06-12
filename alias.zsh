@@ -34,7 +34,7 @@ fi
 alias g='git'
 
 # Branch (b)
-#alias gb='git branch'
+alias gb='git branch'
 alias gbc='git checkout -b'
 alias gbl='git branch -v'
 alias gbL='git branch -av'
@@ -49,6 +49,7 @@ alias gbS='git show-branch -a'
 alias gc='git commit --verbose'
 alias gca='git commit --verbose --all'
 alias gcm='git commit --message'
+alias gcam='git commit --verbose --all --message'
 alias gco='git checkout'
 alias gcO='git checkout --patch'
 alias gcf='git commit --amend --reuse-message HEAD'
@@ -70,8 +71,7 @@ alias gCt='git checkout --theirs --'
 alias gCT='gCt $(gCl)'
 
 # Data (d)
-#alias gd='git ls-files'
-alias gd='git diff --ignore-submodules=${_git_status_ignore_submodules}'
+alias gd='git ls-files'
 alias gdc='git ls-files --cached'
 alias gdx='git ls-files --deleted'
 alias gdm='git ls-files --modified'
@@ -132,7 +132,7 @@ alias gpp='git pull origin "$(git-branch-current 2> /dev/null)" && git push orig
 # Rebase (r)
 alias gr='git rebase'
 alias gra='git rebase --abort'
-#alias grc='git rebase --continue'
+alias grc='git rebase --continue'
 alias gri='git rebase --interactive'
 alias grs='git rebase --skip'
 
@@ -148,8 +148,7 @@ alias gRs='git remote show'
 alias gRb='git-hub-browse'
 
 # Stash (s)
-alias gs='git status --short --branch --ignore-submodules=${_git_status_ignore_submodules}'
-alias gst='git stash'
+alias gs='git stash'
 alias gsa='git stash apply'
 alias gsx='git stash drop'
 alias gsX='git-stash-clear-interactive'
