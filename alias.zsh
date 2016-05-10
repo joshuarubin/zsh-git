@@ -30,9 +30,9 @@ if (( $+commands[gitjk_cmd] )); then
   alias gitjk="history -n | tail -n 10 | (tac || tail -r) | gitjk_cmd"
 fi
 
-# if (( $+commands[gh] )); then
-#   eval "$(gh alias -s)"
-# fi
+if (( $+commands[hub] )); then
+  eval "$(hub alias -s)"
+fi
 
 # Git
 alias g='git'
